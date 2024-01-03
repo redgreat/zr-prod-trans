@@ -13,7 +13,7 @@ import requests
 # 配置、日志设置
 config = configparser.ConfigParser()
 config.read("db.conf")
-logDir = os.path.expanduser("/opt/zrpord/logs")
+logDir = os.path.expanduser("/root/code/zr-prod-trans/")
 if not os.path.exists(logDir):
     os.mkdir(logDir)
 logFile = os.path.join(logDir, "zrprod.log")
